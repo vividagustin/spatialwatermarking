@@ -1,4 +1,30 @@
 function varargout = spatialwatermarking(varargin)
+% spatialwatermarking MATLAB code for spatialwatermarking.fig
+%      spatialwatermarking, by itself, creates a new spatialwatermarking or raises the existing
+%      singleton*.
+%
+%      H = spatialwatermarking returns the handle to a new spatialwatermarking or the handle to
+%      the existing singleton*.
+%
+%      spatialwatermarking('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in spatialwatermarking.M with the given input arguments.
+%
+%      spatialwatermarking('Property','Value',...) creates a new spatialwatermarking or raises the
+%      existing singleton*.  Starting from the left, property value pairs are
+%      applied to the GUI before spatialwatermarking_OpeningFcn gets called.  An
+%      unrecognized property name or invalid value makes property application
+%      stop.  All inputs are passed to spatialwatermarking_OpeningFcn via varargin.
+%
+%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
+%      instance to run (singleton)".
+%
+% See also: GUIDE, GUIDATA, GUIHANDLES
+
+% Edit the above text to modify the response to help spatialwatermarking
+
+% Last Modified by GUIDE v2.5 20-Aug-2020
+% author vivid
+
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
@@ -18,7 +44,6 @@ else
 end
 % End initialization code - DO NOT EDIT
 
-% author: vivid
 function spatialwatermarking_OpeningFcn(hObject, eventdata, handles, varargin)
 handles.output = hObject;
 guidata(hObject, handles);
